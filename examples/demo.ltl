@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_argon2
+
+import std::io
+use ltl_argon2 as lib
+
+fn main() {
+    io::println("ltl_argon2 demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
